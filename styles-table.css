@@ -1,0 +1,67 @@
+/* Estilo general para la tabla */
+table {
+    width: 100%;
+    max-width: 90%; /* Limitar el ancho máximo de la tabla */
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #b34d4d;
+    color: white;
+}
+
+td a {
+    text-decoration: none;
+    color: #b34d4d;
+}
+
+/* Asegurarse de que la tabla se ajuste en pantallas más pequeñas */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        max-width: none; /* Eliminar el límite de ancho para pantallas más pequeñas */
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+
+    .pagination {
+        font-size: 14px;
+    }
+}
+
+/* Estilos de la paginación */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.pagination-link {
+    padding: 10px 20px;
+    background-color: #b34d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pagination-link:hover {
+    background-color: #7e3232;
+}
+
+.pagination span {
+    font-size: 16px;
+    color: #333;
+}
+
