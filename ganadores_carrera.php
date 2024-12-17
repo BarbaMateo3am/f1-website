@@ -7,7 +7,6 @@ if (!isset($_SESSION['usuario'])) {
 
 include('includes/db.php');
 
-// Obtener los resultados de la tabla pos_escud y los nombres de las escuderías
 $query = "
         SELECT c.nombre_carrera, p.nombre, e.nombre_escud, g.tiempo
         FROM ganador_carrera g

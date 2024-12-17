@@ -17,18 +17,29 @@ if (!isset($_SESSION['usuario'])) {
     <title>Página Principal - Formula 1</title>
 </head>
 <body>
-<div class="navbar">
+<div id="navbar" class="navbar">
     <a href="carreras.php">Carreras</a>
     <a href="escuderia.php">Escuderías</a>
     <a href="pilotos.php">Pilotos</a>
     <a href="logout.php">Cerrar Sesión</a>
+    <img src="design/pngwing.com.png" alt="Logo" class="navbar-logo">
 </div>
 
-<!-- Contenido principal -->
+<script>
+    const navbar = document.getElementById('navbar');
+
+    navbar.addEventListener('mouseenter', () => {
+        navbar.classList.add('expanded');
+    });
+
+    navbar.addEventListener('mouseleave', () => {
+        navbar.classList.remove('expanded');
+    });
+</script>
+
+
 <div class="content">
     <h1>Bienvenido a la Página de Formula 1</h1>
-    
-    <p>Selecciona una opción en la barra de navegación para continuar.</p>
 </div>
 
 </body>

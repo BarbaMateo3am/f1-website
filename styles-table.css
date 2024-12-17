@@ -1,10 +1,23 @@
-/* Estilo general para la tabla */
 table {
     width: 100%;
-    max-width: 90%; /* Limitar el ancho máximo de la tabla */
+    max-width: 90%; 
     margin: 20px auto;
     border-collapse: collapse;
 }
+
+h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px; 
+    color: #ffffff; 
+    text-shadow: 2px 2px 10px #000000, 0 0 25px #000000, 0 0 5px #6b0404; 
+    text-align: center; 
+    margin: 20px 0; 
+    padding: 20px; 
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
 
 th, td {
     padding: 10px;
@@ -22,11 +35,11 @@ td a {
     color: #b34d4d;
 }
 
-/* Asegurarse de que la tabla se ajuste en pantallas más pequeñas */
+
 @media (max-width: 768px) {
     table {
         width: 100%;
-        max-width: none; /* Eliminar el límite de ancho para pantallas más pequeñas */
+        max-width: none;
     }
 
     th, td {
@@ -38,7 +51,6 @@ td a {
     }
 }
 
-/* Estilos de la paginación */
 .pagination {
     margin-top: 20px;
     display: flex;

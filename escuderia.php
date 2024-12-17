@@ -23,11 +23,9 @@ $result = $db->query($query);
     <title>Escudería</title>
     <link rel="stylesheet" href="styles-table.css">
     <style>
-        /* Colores para la semaforización */
-        /* Intentamos mover esto al css pero por alguna razon no devolvia los colores */
-        .top-1 { background-color: #4CAF50; color: white; } /* Verde */
-        .top-2 { background-color: #FFC107; color: black; } /* Amarillo */
-        .top-3 { background-color: #F44336; color: white; } /* Rojo */
+        .top-1 { background-color:rgb(110, 233, 114); color: black; } 
+        .top-2 { background-color:rgb(253, 212, 87); color: black; } 
+        .top-3 { background-color:rgb(241, 93, 83); color: black; } 
     </style>
 </head>
 <body>

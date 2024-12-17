@@ -31,11 +31,10 @@ $result = $db->query($query);
     <title>Escudería</title>
     <link rel="stylesheet" href="styles-table.css">
     <style>
-        /* Colores para la semaforización */
         /* Intentamos mover esto al css pero por alguna razon no devolvia los colores */
-        .top-1 { background-color:rgb(110, 233, 114); color: black; } /* Verde */
-        .top-2 { background-color:rgb(253, 212, 87); color: black; } /* Amarillo */
-        .top-3 { background-color:rgb(241, 93, 83); color: black; } /* Rojo */
+        .top-1 { background-color:rgb(110, 233, 114); color: black; } 
+        .top-2 { background-color:rgb(253, 212, 87); color: black; } 
+        .top-3 { background-color:rgb(241, 93, 83); color: black; } 
     </style>
 </head>
 <body>
@@ -56,14 +55,13 @@ $result = $db->query($query);
         <tbody>
             <?php
             while ($row = $result->fetch_assoc()) {
-                // Determinar clase de estilo según el rango
                 $class = '';
                 if ($row['podios']>=10) {
-                    $class = 'top-1'; // Primer lugar
+                    $class = 'top-1';
                 } elseif ($row['podios'] <10 && $row['podios']>=5) {
-                    $class = 'top-2'; // Segundo lugar
+                    $class = 'top-2';
                 } elseif ($row['podios']<5) {
-                    $class = 'top-3'; // Tercer lugar
+                    $class = 'top-3';
                 }
             ?>
                 <tr class="<?php echo $class; ?>">

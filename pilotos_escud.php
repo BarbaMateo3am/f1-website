@@ -21,12 +21,12 @@ $query = "
 $result = $db->query($query);
 
 
-// Obtener el nombre de la escudería
+
 $nombre_escud = '';
 if ($result && $result->num_rows > 0) {
-    $row = $result->fetch_assoc(); // Tomar la primera fila
+    $row = $result->fetch_assoc(); 
     $nombre_escud = $row['nombre_escud'];
-    $result->data_seek(0); // Regresar el cursor al inicio para procesar los datos en la tabla
+    $result->data_seek(0); 
 } else {
     die("No se encontraron pilotos para esta escudería.");
 }

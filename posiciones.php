@@ -24,12 +24,11 @@ $result = $db->query($query);
 
 $nombre_carrera = '';
 if ($result && $result->num_rows > 0) {
-    $row = $result->fetch_assoc(); // Tomar la primera fila
+    $row = $result->fetch_assoc();
     $nombre_carrera = $row['nombre_carrera'];
-    $result->data_seek(0); // Regresar el cursor al inicio para procesar los datos en la tabla
+    $result->data_seek(0);
 } else {
     echo "<p>Esta carrera no está disponible.</p>";
-    echo '<a href="javascript:window.history.back();>Volver</a>';
     exit; 
 }
 ?>
@@ -41,9 +40,9 @@ if ($result && $result->num_rows > 0) {
     <title>Posiciones de Carrera</title>
     <link rel="stylesheet" href="styles-table.css">
     <style>    
-        .top-1 { background-color: #4CAF50; color: white; } /* Verde */
-        .top-2 { background-color: #FFC107; color: black; } /* Amarillo */
-        .top-3 { background-color: #F44336; color: white; } /* Rojo */
+        .top-1 { background-color:rgb(110, 233, 114); color: black; } 
+        .top-2 { background-color:rgb(253, 212, 87); color: black; } 
+        .top-3 { background-color:rgb(241, 93, 83); color: black; } 
     </style>
 </head>
 <body>
